@@ -44,6 +44,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVzc2FnZXNOb0F1dGgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/jack0/RiderProjects/SignalRAuth/SignalRAuth/Client/Pages/StreamCounter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RyZWFtQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/jack0/RiderProjects/SignalRAuth/SignalRAuth/Client/Shared/LoginDisplay.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luRGlzcGxheS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

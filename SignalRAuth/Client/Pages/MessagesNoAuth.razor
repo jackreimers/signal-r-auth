@@ -34,6 +34,7 @@
 
         if (tokenResult.TryGetToken(out var token))
         {
+            Console.WriteLine("[NoAuth.OnInitializedAsync] Authenticated hub connection initialised.");
             hubConnection = new HubConnectionBuilder()
                 .WithUrl(NavigationManager.ToAbsoluteUri("/chat"), 
                     options => { options.AccessTokenProvider = () => Task.FromResult(token?.Value); })
@@ -64,7 +65,7 @@
             Message = Message
         };
 
-        await hubConnection.SendAsync("SendMessage", message);
+        await hubConnection.SendAsync("SendMessageNoAuth", message);
     }
     
     private void ReceiveMessage(ChatMessage message)

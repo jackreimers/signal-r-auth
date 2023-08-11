@@ -210,14 +210,14 @@
       "netstandard.dll": "sha256-5SHKPh1PcuJjq4lIo7ymdIyhb9d3++oMAjr46auhUSc=",
       "System.Private.CoreLib.dll": "sha256-eH+XIsCUG5oZ0k8AIzNtRLTCLiV\/8Zv0RFCPMsIkdYY=",
       "SignalRAuth.Shared.dll": "sha256-c3Y0hsmj02Owuf16bnPg1FprUwOFTgzQ32onkP4Sp0E=",
-      "SignalRAuth.Client.dll": "sha256-ZA9r8Av22ansJ6ge6ePfNUi9FHlA8flNaJlhiqwVe50="
+      "SignalRAuth.Client.dll": "sha256-TW55OFji5p4Rka8qzEUAaffiC5D3+UUBdf0Atxci0hg="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "SignalRAuth.Shared.pdb": "sha256-8Z\/uuGHeo22mJ32EbMMZPDkRVfMFa1sclY\/2pBg91kQ=",
-      "SignalRAuth.Client.pdb": "sha256-nUYon+fSiHfpw3LLIy\/Fj53S9GQeXHgG9jIZ2jN+jQg="
+      "SignalRAuth.Client.pdb": "sha256-B+yiJIfIx0iv18ry3v+SXnO3kzEDlYisFxEEiyQou7I="
     },
     "runtime": {
       "dotnet.7.0.9.9j442hl23s.js": "sha256-dUIY5Mz0ozZWqtTfBb7ArJKbdh5IIp8BXeq6UjK4u\/c=",
