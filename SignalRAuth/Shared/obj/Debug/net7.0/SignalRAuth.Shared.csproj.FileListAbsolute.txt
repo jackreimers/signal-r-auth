@@ -1,0 +1,12 @@
+C:\Users\jack0\RiderProjects\SignalRAuth\SignalRAuth\Shared\bin\Debug\net7.0\SignalRAuth.Shared.deps.json
+C:\Users\jack0\RiderProjects\SignalRAuth\SignalRAuth\Shared\bin\Debug\net7.0\SignalRAuth.Shared.dll
+C:\Users\jack0\RiderProjects\SignalRAuth\SignalRAuth\Shared\bin\Debug\net7.0\SignalRAuth.Shared.pdb
+C:\Users\jack0\RiderProjects\SignalRAuth\SignalRAuth\Shared\obj\Debug\net7.0\SignalRAuth.Shared.csproj.AssemblyReference.cache
+C:\Users\jack0\RiderProjects\SignalRAuth\SignalRAuth\Shared\obj\Debug\net7.0\SignalRAuth.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jack0\RiderProjects\SignalRAuth\SignalRAuth\Shared\obj\Debug\net7.0\SignalRAuth.Shared.AssemblyInfoInputs.cache
+C:\Users\jack0\RiderProjects\SignalRAuth\SignalRAuth\Shared\obj\Debug\net7.0\SignalRAuth.Shared.AssemblyInfo.cs
+C:\Users\jack0\RiderProjects\SignalRAuth\SignalRAuth\Shared\obj\Debug\net7.0\SignalRAuth.Shared.csproj.CoreCompileInputs.cache
+C:\Users\jack0\RiderProjects\SignalRAuth\SignalRAuth\Shared\obj\Debug\net7.0\SignalRAuth.Shared.dll
+C:\Users\jack0\RiderProjects\SignalRAuth\SignalRAuth\Shared\obj\Debug\net7.0\refint\SignalRAuth.Shared.dll
+C:\Users\jack0\RiderProjects\SignalRAuth\SignalRAuth\Shared\obj\Debug\net7.0\SignalRAuth.Shared.pdb
+C:\Users\jack0\RiderProjects\SignalRAuth\SignalRAuth\Shared\obj\Debug\net7.0\ref\SignalRAuth.Shared.dll

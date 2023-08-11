@@ -1,0 +1,79 @@
+﻿@page "/Messages"
+@using SignalRAuth.Shared
+@using Microsoft.AspNetCore.SignalR.Client
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@inject NavigationManager NavigationManager
+@inject IAccessTokenProvider TokenProvider
+@attribute [Authorize]
+
+<input @bind="Username"/>
+<input @bind="Message"/>
+<button @onclick="Send">Send Message</button>
+
+<div>
+    @foreach (var message in messages)
+    {
+        <div>
+            <span class="username">@message.User</span>
+            <span class="text">@message.Message</span>
+        </div>
+    }
+</div>
+
+@code {
+    
+    public string Username { get; set; }
+    public string Message { get; set; }
+    
+    private List<ChatMessage> messages = new List<ChatMessage>();
+    
+    private HubConnection hubConnection;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var tokenResult = await TokenProvider.RequestAccessToken();
+
+        if (tokenResult.TryGetToken(out var token))
+        {
+            Console.WriteLine("[Auth.OnInitializedAsync] Authenticated hub connection initialised.");
+
+            hubConnection = new HubConnectionBuilder()
+                .WithUrl(NavigationManager.ToAbsoluteUri("/chat"), 
+                    options => { options.AccessTokenProvider = () => Task.FromResult(token?.Value); })
+                .Build();
+        }
+        
+        else
+        {
+            hubConnection = new HubConnectionBuilder()
+                .WithUrl(NavigationManager.ToAbsoluteUri("/chat"))
+                .Build();
+        }
+
+        hubConnection.On<ChatMessage>("ReceiveMessage", ReceiveMessage);
+        
+        await hubConnection.StartAsync();
+        await base.OnInitializedAsync();
+    }
+
+    private async Task Send()
+    {
+        Console.WriteLine($"[Auth.Send] Sending message... {Username} {Message}");
+
+        var message = new ChatMessage
+        {
+            User = Username,
+            Message = Message
+        };
+
+        await hubConnection.SendAsync("SendMessage", message);
+    }
+    
+    private void ReceiveMessage(ChatMessage message)
+    {
+        messages.Add(message);
+        StateHasChanged();
+    }
+
+}
